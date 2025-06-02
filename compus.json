@@ -1,0 +1,2478 @@
+{
+  "v": "5.9.0",
+  "fr": 3,
+  "ip": 0,
+  "op": 32,
+  "w": 17,
+  "h": 17,
+  "nm": "HorseWalkingAnimation",
+  "ddd": 0,
+  "assets": [
+    {
+      "id": "image_0",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/////FBRkZGS+FRUbHcllAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGlJREFUeJx9z0kOwzAMQ1FZ1GSnvf91C1MBEgRI/05vJcp4JkOejRcxdolZZnh42xCBh6mqmjsocN5toDR8SDeZx7wkSceGaIm1VPWrGjFPqVorq8JniyCrKjLdN/BDICnYcK4A+7/01g9uaAKcbMtTwQAAAABJRU5ErkJggg==",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_1",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/////FBRkZGS+FRUbHcllAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGlJREFUeJx9z8sOgDAIRFHK8Gqr//+7ptBEY6J3x1kx1N5Ro3ftQyS7RcTd1LSsEUFNmJlFFSnQvMuQUnAkPaTPfosvmucCK7ExmCczm/UtEWN4hGkvIXhEmLvqgvwQ8BQs2CuQ/S99dAFzVAKl2XH1OgAAAABJRU5ErkJggg==",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_2",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/////FBRkZGS+FRUbHcllAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGhJREFUeJx9z0EOwzAIRFHsYQA76f2vWwGREkVq/463YmS8kyHvxg/R6hZVd6OxbYiApnPOqSRKwLrbUNJwnkkPWce6xZOOT4K12N4NZuuSiL09wrhaBB4R5k4m1IeAlyDhWoHq/9JHX37+ArqBkneoAAAAAElFTkSuQmCC",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_3",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT///++FRVkZGQ6uljuAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGhJREFUeJx9z+EKgDAIRlGnfuq2ev/XjemgCOr+84Cg1N5Ro3ftQzS7RdXdYChrRAJTZmYFJEWQc5mkbOiLHjLGeYsr8zhyy0pszgKzviViTo8w9BISjwhzBxbkhSKeIgv2F5L9f/roAniiArEQX0D5AAAAAElFTkSuQmCC",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_4",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT///++FRVkZGQ6uljuAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGxJREFUeJx9z+EKwCAIRlFTP7Xa3v91RxpsDLb7z4NBUntHjd61D9HsFlV3g6GsEQlMmZkVkBRBzmWSsuHszPqQMfpaKnHlMY58ZSU2Z85s1rdEzOkRhl5C4hFh7sCC/KGIp8iCfYVk/5c+ugB+HAK4WrTfhQAAAABJRU5ErkJggg==",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_5",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT///++FRVkZGQ6uljuAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAG1JREFUeJx9z9sKAzEIRVHj8RYz/f/fLdHADAPtfstCIdJ4R4PejR8i1S0i7qambYMIasLMLKoogda7DSUHPpNZbrky5x5qccnMq7asxdbqPbN5JGItjzCdLQSPCHNX3VA/BLwEG84VqP5f+ugLg8oCwN3vBgUAAAAASUVORK5CYII=",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_6",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT///9kZGTLGhpKC3s/AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGxJREFUeJx9z9sKxDAIRVHj5WhM5/9/d4iW6VBo95uLEJTGPRp0bzyIVpeousNgbYNIDMrMrGZSIlZzm5Q0HEWXZOYxf+Ka+eG5n6AFa/U3wDwlYi2PgM0WEo8IuJttqA1FvEQ2nFdI9X7pX1+DOgLAeDoA0gAAAABJRU5ErkJggg==",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_7",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT///9kZGTLGhpKC3s/AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGtJREFUeJx9z9EKxDAIRFGTcdRs2v//3RIN7VLYvW85iERp76TJu/ZDNHtE1d1oLGsioGnvvSuJFDDfZUgpOJK2nJ/VMW7xHBprxEpszlpjNrZEzOkRxlEi8Igwd3JB/hDwFCzYVyD7f+lXF4VBAsB6PkG2AAAAAElFTkSuQmCC",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_8",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAJ1BMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT///9kZGSilGbtAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGlJREFUeJx9z9EOAyEIRFEUGLDu/39v42B2NybtffOEEJF2Jk3O2g8x9ohZBBxe1kTUYb33bu5KUee7TCkFF2nLh13jluDQWCMowZy1BhhbMueMTPgoEY3MRIT7Av5QNSi6YF+h7P+lr76DagK9VVj0LgAAAABJRU5ErkJggg==",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_9",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT///9kZGTLGhpKC3s/AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGtJREFUeJx9z9EKxDAIRFGTcdRs2v//3RIN7VLYvW85iERp76TJu/ZDNHtE1d1oLGsioGnvvSuJFDDfZUgpOJK2nJ/VMW7xHBprxEpszlpjNrZEzOkRxlEi8Igwd3JB/hDwFCzYVyD7f+lXF4VBAsB6PkG2AAAAAElFTkSuQmCC",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_10",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT///9kZGTLGhpKC3s/AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAG5JREFUeJx9z9sOxCAIRVHkcBM7//+7E6FzSZN2v7mCRmhco0HXxo1I9RMRd1PTtkEENWFmFlWUQOvchhLhzOSj6CPMr8xjfsXr1twj1mJr9TNm85SItTzCdLYQPCLMXXVD/RDwEmw4t0D1vOlfb4bQAsBkIPAnAAAAAElFTkSuQmCC",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_11",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2Nj/FBRPTU3///9kZGTLGhr9dTTWAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAG1JREFUeJx9z9sOhDAIRVEKHC6t/v/vGsGJExPdb6ykDdB4RoOejRfR6hZVd4OhbRAJTJmZFZASQc1tUqKcmdn0E2bec7vF+9XcWK3F1upvzOYlEWt5hGG2kHhEmDtwQm0o4iVywnWFVN+X/nUAgGkCuVgFbfMAAAAASUVORK5CYII=",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_12",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT////LGhpkZGS7ZkMbAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGxJREFUeJx9z8sOhEAIRFGaR0Hb+v+/awAzTkz0Ls+CUDSe0aBn40W0ukXVHQZrG0RiUGZmNZMSMeUtJU1KlHnf2vQnacctXsTzYEUL1uozwLwkYi2PgM0WEo8IuJsl1IciXiIJ1wqpvpf+dQKEHAK8EgoFkAAAAABJRU5ErkJggg==",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_13",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT////LGhpkZGS7ZkMbAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGxJREFUeJx9z0kKxDAMRFG5NNpO3/+6jWSDQyD5y4cWKmrPqNGz9iJSHRFxNzVd1ohYTQBAVLmEVTBGEiSpEefBtekIrvE74kXogNgSm7MIZn1LxJweYdqXEHtEmLtqQn3I7CWcsFdw9b301h9+9gKxg0knvAAAAABJRU5ErkJggg==",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_14",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAJ1BMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT///9kZGSilGbtAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGhJREFUeJx9z8sKwCAMRNE4ear9/+8tJoKl0N7lIYsMtXfU6F37EMmOiLibmpY1IlYTABBVTmEVYIwyTsmDTQ/p4zriRRcgVmJzLgLM+paIOT3CtJcQe0SYu+qC/JDZU3jBXsHZ/9JHN4BVArUXa2uEAAAAAElFTkSuQmCC",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_15",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAJ1BMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT///9kZGSilGbtAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGdJREFUeJx9z0sOgDAIRVHK50Fb979eA5hoTPTOOGEANN7RoHfjQ7S6RdUdBmsbRGJQZmY1kxKxnFeblNTCanrIXMct3pSAFuydxAzMSyL29gjYbCHxiIC7WUJdKOIlknB9IdX/p49OdTMCo80y/mwAAAAASUVORK5CYII=",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_16",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAJ1BMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/////FBRkZGQj853AAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGdJREFUeJx9z1sKgDAMRNE0j0la3f96pdOCIuj9y4FAIu2dNHnXPsTZLe6ZCMSyJmIBV1X1CKNYcD5oRiFQ1B/Sj/OWXDQBSzAG9xToW6rGyCpEXyKWVYXMiAm80CwpNmF/Yez/00cXcBcCmlCjT4sAAAAASUVORK5CYII=",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_17",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAJ1BMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT///9kZGSilGbtAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGlJREFUeJx9z9sKxCAMRdGYy0nU/v/3Fo9CS2Fmv2WhkEj7Jk2+tR/i7BH3TARiWxOxgKuqeoRRLDjrWGaUA2M9e8k1+iNJImAL5uQ/BfqRqjmzCtG3iGVVITNiATc0S4otOFcY+3/pqxt1GQKj7Ii2ngAAAABJRU5ErkJggg==",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_18",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAJ1BMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT///9kZGSilGbtAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGpJREFUeJx9z+sKgDAIhmH9PG7r/q835kZFUO8/HxCU+B0xveMP0eoW1Qg3t2VMJOYKAGomJWI1o3foJCa5ANCHHL3dEpOOAl/iY9Qe3NuWzDEi060tIYnM9AizCXWhSJTIhP2FVP+fPjoBgC8CtRmGT74AAAAASUVORK5CYII=",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_19",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT////LGhpkZGS7ZkMbAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGxJREFUeJx9z9sOhDAIRVHgcKsd//93DVSjMXH2GytpA8TviOkdf4h2t6hGuLktYyKYq4iImqEF1rPItmkREy74iehD9oJLomj0T77E51zv3McpmXNGpttYQojM9Aizgt4QiBYUnFeg+3/powN+fgKxWMhnhgAAAABJRU5ErkJggg==",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_20",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/////FBRkZGTLGhpeAGKAAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGxJREFUeJx9z+EKwCAIRlFTP7Xa3v91RxpsDLb7r4NCUntHjd61D9HsFlV3g6GsEQlMmZkVkBRBvsskZcOcJ+tDjnmuoRJX5qPnlpXYGLVn1rdEjOERhl5C4hFh7sCC/KGIp8iCfYVk/5c+ugB+QAKzjOLjIAAAAABJRU5ErkJggg==",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_21",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/////FBRkZGTLGhpeAGKAAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGxJREFUeJx9z+EKwCAIRlFTP7Xa3v91RxpsDLb7r4NCUntHjd61D9HsFlV3g6GsEQlMmZkVkBRBvsskZcOc89SHHPNcQyWuzEfPLSuxMWrPrG+JGMMjDL2ExCPC3IEF+UMRT5EF+wrJ/i99dAGEFAK8XI62fAAAAABJRU5ErkJggg==",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_22",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTWCgoJeXl6oqKjY2NhPTU3/FBT///9kZGTLGho4BY1uAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAG1JREFUeJx9z9sOAyEIRVHkcBOn//+7jWAyk0na/eYKGqHxjga9Gz9EqltE3NXU2gYRTIWZWcxQAqtzG0oaLs5MuWVemR/mI15Dc9/SFl2rn1GdRyLW8gi12ULwiFB3sw31Q8BLsOFsger/po++h0MCwNQEj5MAAAAASUVORK5CYII=",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_23",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAJ1BMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT///9kZGSilGbtAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGhJREFUeJx9z9EKwCAIhWHr6NHW3v95RxpsDLb/rg+RlPZOmrxrH6LZLaruNFpZE4FRe+9dzZACy3cZUgrOpFvGeay2eA6NNcISzllryLElYk6PoI0SgUcE3c0W5A8BT8GCfQWy/0sfXX4SArUytIiLAAAAAElFTkSuQmCC",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_24",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAJ1BMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT///9kZGSilGbtAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGhJREFUeJx9z9EKwCAIhWHr6NHW3v95RxpsDLb/rg+RlPZOmrxrH6LZLaruNFpZE4FRe+9dzZACy3cZUgrOpFvGeay2eA6NNcISzllryLElYk6PoI0SgUcE3c0W5A8BT8GCfQWy/0sfXX4SArUytIiLAAAAAElFTkSuQmCC",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_25",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAJ1BMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT///9kZGSilGbtAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGhJREFUeJx9z9EKwCAIhWHr6NHW3v95RxpsDLb/rg+RlPZOmrxrH6LZLaruNFpZE4FRe+9dzZACy3cZUgrOpFvGeay2eA6NNcISzllryLElYk6PoI0SgUcE3c0W5A8BT8GCfQWy/0sfXX4SArUytIiLAAAAAElFTkSuQmCC",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_26",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/////FBRkZGTLGhpeAGKAAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGxJREFUeJx9z9EKwzAIhWHj8ahJuvd/3VEt6yhs/50fIaiMZzLk2fghVt1iFuF0tg0R0E1V1UiUgDW3oaThKLplHnvvj0Q9mvra5i2+Vn/jPi/JXCsynbNFEJnpEeQJtSEQJTjhugLV/0u/egN/HAK4aD7dYgAAAABJRU5ErkJggg==",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_27",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT///9kZGTLGhpKC3s/AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGpJREFUeJx9z+sKgCAMhuG5bye17v92wy0wgnr/7QFlo/aOGr1rHyLZFhF3U9OyRgQ1YWYWVaRAcy5DyoJ+FG3hY4wtXq/OMcRKbM76xqzfEjGnR5j2EoJHhLmrLsgNAU/BgvsKZP+XProAeucCsekGb/EAAAAASUVORK5CYII=",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_28",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/FBT///9kZGTLGhpKC3s/AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGpJREFUeJx9z+sKgCAMhuG5bye17v92wy0wgnr/7QFlo/aOGr1rHyLZFhF3U9OyRgQ1YWYWVaRAcy5DyoJ+FG3hY4wtXq/OMcRKbM76xqzfEjGnR5j2EoJHhLmrLsgNAU/BgvsKZP+XProAeucCsekGb/EAAAAASUVORK5CYII=",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_29",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/////FBRkZGTLGhpeAGKAAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGdJREFUeJx9z9EKhUAIRVHH41Gb6f7/717SoAhqv7lAUBnPZMiz8SJWXWIW4XS2DRHQTVXVSJSANbehpGBvustal0Rv/Zaat/icTe7bKZlzRqZzaxFEZnoEeUBdCEQJDji/QPX96a0/dvoCrNQ2vpgAAAAASUVORK5CYII=",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_30",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/////FBRkZGTLGhpeAGKAAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGhJREFUeJx9z0kOhEAMQ9FUnKkKuP91EQ4SCKn77/JWsYxvMuTb+CHGHjHLDA9vGyLwMFVVcwcFzrsNFMK+k14yt/lIko5N1aIl1mqKmLdUrZVV4bNFkFUVme4X8EMgKbjgXgH2f+mrE37GAroHZHjPAAAAAElFTkSuQmCC",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    },
+    {
+      "id": "image_31",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAKlBMVEVMaXEAgIAvLy8YFxc1NTVeXl6CgoKoqKjY2NhPTU3/////FBRkZGTLGhpeAGKAAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGdJREFUeJx9z8sOgCAMRNHSN6D//7uGKYnGRO+uZ9Wh9o4avWsfougW1Qg3t7JGJObKzKxmAhHDXSaQggP0kD77LQE6J7N6iY+xaLJ735I5RmS69RKSyEyPMFuAD0UCIgv2CkH/Sx9dczACpdqLEV0AAAAASUVORK5CYII=",
+      "u": "",
+      "w": 17,
+      "h": 17,
+      "e": 1
+    }
+  ],
+  "layers": [
+    {
+      "ddd": 0,
+      "ind": 1,
+      "ty": 2,
+      "nm": "Frame 1",
+      "refId": "image_0",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 0,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 0.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 1,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 1,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 2,
+      "ty": 2,
+      "nm": "Frame 2",
+      "refId": "image_1",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 1,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 1.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 2,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 1,
+      "op": 2,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 3,
+      "ty": 2,
+      "nm": "Frame 3",
+      "refId": "image_2",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 2,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 2.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 3,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 2,
+      "op": 3,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 4,
+      "ty": 2,
+      "nm": "Frame 4",
+      "refId": "image_3",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 3,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 3.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 4,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 3,
+      "op": 4,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 5,
+      "ty": 2,
+      "nm": "Frame 5",
+      "refId": "image_4",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 4,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 4.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 5,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 4,
+      "op": 5,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 6,
+      "ty": 2,
+      "nm": "Frame 6",
+      "refId": "image_5",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 5,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 5.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 6,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 5,
+      "op": 6,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 7,
+      "ty": 2,
+      "nm": "Frame 7",
+      "refId": "image_6",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 6,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 6.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 7,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 6,
+      "op": 7,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 8,
+      "ty": 2,
+      "nm": "Frame 8",
+      "refId": "image_7",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 7,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 7.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 8,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 7,
+      "op": 8,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 9,
+      "ty": 2,
+      "nm": "Frame 9",
+      "refId": "image_8",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 8,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 8.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 9,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 8,
+      "op": 9,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 10,
+      "ty": 2,
+      "nm": "Frame 10",
+      "refId": "image_9",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 9,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 9.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 10,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 9,
+      "op": 10,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 11,
+      "ty": 2,
+      "nm": "Frame 11",
+      "refId": "image_10",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 10,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 10.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 11,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 10,
+      "op": 11,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 12,
+      "ty": 2,
+      "nm": "Frame 12",
+      "refId": "image_11",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 11,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 11.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 12,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 11,
+      "op": 12,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 13,
+      "ty": 2,
+      "nm": "Frame 13",
+      "refId": "image_12",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 12,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 12.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 13,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 12,
+      "op": 13,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 14,
+      "ty": 2,
+      "nm": "Frame 14",
+      "refId": "image_13",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 13,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 13.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 14,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 13,
+      "op": 14,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 15,
+      "ty": 2,
+      "nm": "Frame 15",
+      "refId": "image_14",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 14,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 14.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 15,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 14,
+      "op": 15,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 16,
+      "ty": 2,
+      "nm": "Frame 16",
+      "refId": "image_15",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 15,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 15.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 16,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 15,
+      "op": 16,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 17,
+      "ty": 2,
+      "nm": "Frame 17",
+      "refId": "image_16",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 16,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 16.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 17,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 16,
+      "op": 17,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 18,
+      "ty": 2,
+      "nm": "Frame 18",
+      "refId": "image_17",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 17,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 17.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 18,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 17,
+      "op": 18,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 19,
+      "ty": 2,
+      "nm": "Frame 19",
+      "refId": "image_18",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 18,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 18.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 19,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 18,
+      "op": 19,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 20,
+      "ty": 2,
+      "nm": "Frame 20",
+      "refId": "image_19",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 19,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 19.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 20,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 19,
+      "op": 20,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 21,
+      "ty": 2,
+      "nm": "Frame 21",
+      "refId": "image_20",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 20,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 20.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 21,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 20,
+      "op": 21,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 22,
+      "ty": 2,
+      "nm": "Frame 22",
+      "refId": "image_21",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 21,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 21.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 22,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 21,
+      "op": 22,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 23,
+      "ty": 2,
+      "nm": "Frame 23",
+      "refId": "image_22",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 22,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 22.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 23,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 22,
+      "op": 23,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 24,
+      "ty": 2,
+      "nm": "Frame 24",
+      "refId": "image_23",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 23,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 23.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 24,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 23,
+      "op": 24,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 25,
+      "ty": 2,
+      "nm": "Frame 25",
+      "refId": "image_24",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 24,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 24.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 25,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 24,
+      "op": 25,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 26,
+      "ty": 2,
+      "nm": "Frame 26",
+      "refId": "image_25",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 25,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 25.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 26,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 25,
+      "op": 26,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 27,
+      "ty": 2,
+      "nm": "Frame 27",
+      "refId": "image_26",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 26,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 26.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 27,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 26,
+      "op": 27,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 28,
+      "ty": 2,
+      "nm": "Frame 28",
+      "refId": "image_27",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 27,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 27.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 28,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 27,
+      "op": 28,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 29,
+      "ty": 2,
+      "nm": "Frame 29",
+      "refId": "image_28",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 28,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 28.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 29,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 28,
+      "op": 29,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 30,
+      "ty": 2,
+      "nm": "Frame 30",
+      "refId": "image_29",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 29,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 29.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 30,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 29,
+      "op": 30,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 31,
+      "ty": 2,
+      "nm": "Frame 31",
+      "refId": "image_30",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 30,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 30.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 31,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 30,
+      "op": 31,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 32,
+      "ty": 2,
+      "nm": "Frame 32",
+      "refId": "image_31",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "t": 31,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 31.99,
+              "s": [
+                100
+              ],
+              "h": 1
+            },
+            {
+              "t": 32,
+              "s": [
+                0
+              ],
+              "h": 1
+            }
+          ]
+        },
+        "r": {
+          "a": 0,
+          "k": 0
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            8.5,
+            8.5,
+            0
+          ]
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ]
+        }
+      },
+      "ao": 0,
+      "ip": 31,
+      "op": 32,
+      "st": 0,
+      "bm": 0
+    }
+  ]
+}
